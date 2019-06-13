@@ -11,6 +11,7 @@ include_directories("./include")
 
 set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER "${header_files}")
 set_target_properties(${PROJECT_NAME}_static PROPERTIES OUTPUT_NAME ${PROJECT_NAME})
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 target_link_libraries(${PROJECT_NAME})
 
